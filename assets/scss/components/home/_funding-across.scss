@@ -5,6 +5,11 @@
         max-width: 590px;
         margin: auto;
     }
+    .funding-across-images{
+        img{
+            object-fit: cover;
+        }
+    }
     .funding-across-img-1{
         position: absolute;
         width: 11.5%;

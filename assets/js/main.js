@@ -1,29 +1,47 @@
 (function ($) {
     "use strict";
-    document.querySelector(".contract-form").addEventListener("submit", function (e) {
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("#contact-form");
+        if (!form) return;
 
-        let valid = true;
+        form.addEventListener("submit", function (e) {
+            let valid = true;
 
-        document.querySelectorAll(".input-fild").forEach(function (field) {
+            // Select all inputs and textareas with "required"
+            const requiredFields = form.querySelectorAll("input[required], textarea[required]");
 
-            const input = field.querySelector("input, textarea");
-            const required = field.querySelector(".required");
+            requiredFields.forEach(function (input) {
+                // Get the closest .input-fild parent
+                let field = input.closest(".input-fild");
 
-            if (!required) return;
+                if (!field) {
+                    // fallback: look at parent twice if nested in col-md-6
+                    field = input.parentElement.closest(".input-fild");
+                }
 
-            if (input.value.trim() === "") {
-                required.style.display = "block";
-                valid = false;
-            } else {
-                required.style.display = "none";
-            }
+                if (!field) return;
 
+                // Find the .required span inside this field
+                const requiredMsg = field.querySelector(".required");
+
+                if (input.value.trim() === "") {
+                    // Add class only if empty
+                    field.classList.add("required-fild");
+
+                    // Show the required message
+                    if (requiredMsg) requiredMsg.style.display = "block";
+
+                    valid = false;
+                } else {
+                    // Remove class if filled
+                    field.classList.remove("required-fild");
+                    if (requiredMsg) requiredMsg.style.display = "none";
+                }
+            });
+
+            // Prevent submit if invalid
+            if (!valid) e.preventDefault();
         });
-
-        if (!valid) {
-            e.preventDefault();
-        }
-
     });
 
 })(jQuery);
