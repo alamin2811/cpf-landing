@@ -1,0 +1,76 @@
+.banner-section{
+    padding-top: 185px;
+    position: relative;
+    background: url(../images/bg/banner-bg.png);
+    background-size: 100% auto;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.banner-top{
+    max-width: 1127px;
+    padding-bottom: 530px;
+    h1{
+        font-family: "Quanta Grotesk Pro";
+        font-weight: 500;
+        font-size: 80px;
+        line-height: 110%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    h3{
+        font-family: "Quanta Grotesk Pro";
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        span{
+            position: relative;
+            &::after{
+                content: '';
+                height: 6px;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: color(primaryColor);
+            }
+        }
+    }
+}
+
+.banner-bottom-left{
+    padding-bottom: 50px;
+   p{
+     color: color(whiteColor);
+     font-weight: 500;
+     font-size: 26px;
+     line-height: 153.85%;
+   } 
+   ul{
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 0%;
+        color: color(whiteColor);
+        margin-bottom: 5px;a
+        svg{
+            font-size: 24px;
+        }
+    }
+   }
+}
+.banner-bottom-right{
+    padding-bottom: 50px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 30px;
+}
+

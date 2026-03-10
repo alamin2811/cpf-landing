@@ -1,0 +1,48 @@
+.features-section {
+  .section-title {
+    max-width: 640px;
+  }
+}
+
+.features-content{
+    padding-top: 15px;
+    margin-bottom: -30px;
+}
+
+.features-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0px;
+    background: #01275408;
+    margin-bottom: 30px;
+    .features-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 125px;
+      min-height: 135px;
+      max-width: 125px;
+      max-height: 135px;
+      background: #E9EBF0;
+    }
+
+    .features-text {
+      padding: 5px 15px;
+      h6 {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+        color: color(SecondaryColor);
+      }
+
+      p {
+        line-height: 24px;
+        margin-bottom: 0;
+        color: color(SecondaryColor);
+      }
+    }
+}
+

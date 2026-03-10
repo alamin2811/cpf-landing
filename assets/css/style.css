@@ -1,0 +1,1410 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+@font-face {
+  font-family: "Quanta Grotesk Pro";
+  src: url("../fonts/QuantaGroteskPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 5px;
+}
+html::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding: 10px;
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #6d6d6d;
+}
+
+body {
+  font-family: "Funnel Display";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0;
+  background: #ffffff;
+}
+
+.cpf-body {
+  position: relative;
+  z-index: 1;
+  background: #FFF;
+  margin-bottom: 479px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-11 {
+  z-index: 11;
+}
+
+.w-0 {
+  width: 0%;
+}
+
+.w-1 {
+  width: 1%;
+}
+
+.w-2 {
+  width: 2%;
+}
+
+.w-3 {
+  width: 3%;
+}
+
+.w-4 {
+  width: 4%;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.w-6 {
+  width: 6%;
+}
+
+.w-7 {
+  width: 7%;
+}
+
+.w-8 {
+  width: 8%;
+}
+
+.w-9 {
+  width: 9%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-11 {
+  width: 11%;
+}
+
+.w-12 {
+  width: 12%;
+}
+
+.w-13 {
+  width: 13%;
+}
+
+.w-14 {
+  width: 14%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-16 {
+  width: 16%;
+}
+
+.w-17 {
+  width: 17%;
+}
+
+.w-18 {
+  width: 18%;
+}
+
+.w-19 {
+  width: 19%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-21 {
+  width: 21%;
+}
+
+.w-22 {
+  width: 22%;
+}
+
+.w-23 {
+  width: 23%;
+}
+
+.w-24 {
+  width: 24%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-26 {
+  width: 26%;
+}
+
+.w-27 {
+  width: 27%;
+}
+
+.w-28 {
+  width: 28%;
+}
+
+.w-29 {
+  width: 29%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-31 {
+  width: 31%;
+}
+
+.w-32 {
+  width: 32%;
+}
+
+.w-33 {
+  width: 33%;
+}
+
+.w-34 {
+  width: 34%;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.w-36 {
+  width: 36%;
+}
+
+.w-37 {
+  width: 37%;
+}
+
+.w-38 {
+  width: 38%;
+}
+
+.w-39 {
+  width: 39%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-41 {
+  width: 41%;
+}
+
+.w-42 {
+  width: 42%;
+}
+
+.w-43 {
+  width: 43%;
+}
+
+.w-44 {
+  width: 44%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-46 {
+  width: 46%;
+}
+
+.w-47 {
+  width: 47%;
+}
+
+.w-48 {
+  width: 48%;
+}
+
+.w-49 {
+  width: 49%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-51 {
+  width: 51%;
+}
+
+.w-52 {
+  width: 52%;
+}
+
+.w-53 {
+  width: 53%;
+}
+
+.w-54 {
+  width: 54%;
+}
+
+.w-55 {
+  width: 55%;
+}
+
+.w-56 {
+  width: 56%;
+}
+
+.w-57 {
+  width: 57%;
+}
+
+.w-58 {
+  width: 58%;
+}
+
+.w-59 {
+  width: 59%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-61 {
+  width: 61%;
+}
+
+.w-62 {
+  width: 62%;
+}
+
+.w-63 {
+  width: 63%;
+}
+
+.w-64 {
+  width: 64%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.w-66 {
+  width: 66%;
+}
+
+.w-67 {
+  width: 67%;
+}
+
+.w-68 {
+  width: 68%;
+}
+
+.w-69 {
+  width: 69%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-71 {
+  width: 71%;
+}
+
+.w-72 {
+  width: 72%;
+}
+
+.w-73 {
+  width: 73%;
+}
+
+.w-74 {
+  width: 74%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-76 {
+  width: 76%;
+}
+
+.w-77 {
+  width: 77%;
+}
+
+.w-78 {
+  width: 78%;
+}
+
+.w-79 {
+  width: 79%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-81 {
+  width: 81%;
+}
+
+.w-82 {
+  width: 82%;
+}
+
+.w-83 {
+  width: 83%;
+}
+
+.w-84 {
+  width: 84%;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-86 {
+  width: 86%;
+}
+
+.w-87 {
+  width: 87%;
+}
+
+.w-88 {
+  width: 88%;
+}
+
+.w-89 {
+  width: 89%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-91 {
+  width: 91%;
+}
+
+.w-92 {
+  width: 92%;
+}
+
+.w-93 {
+  width: 93%;
+}
+
+.w-94 {
+  width: 94%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.w-96 {
+  width: 96%;
+}
+
+.w-97 {
+  width: 97%;
+}
+
+.w-98 {
+  width: 98%;
+}
+
+.w-99 {
+  width: 99%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.features-section {
+  padding: 100px 0px;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title h2 {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 120%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #012754;
+}
+.section-title p {
+  margin-bottom: 30px;
+  line-height: 150%;
+}
+
+.header-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 0;
+}
+.header-inner .header-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+}
+.header-inner .header-left .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 196px;
+}
+.header-inner .header-left .logo img {
+  width: 100%;
+}
+.header-inner .header-left .call {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #012754;
+}
+.header-inner .header-left .call .call-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background: rgba(100, 204, 201, 0.2509803922);
+}
+.header-inner .header-left .call .call-icon svg {
+  color: #64CCC9;
+  font-size: 22px;
+}
+.header-inner .header-left .call .number {
+  padding: 5px 15px 5px 10px;
+  backdrop-filter: blur(20px);
+  background: rgba(1, 39, 84, 0.0392156863);
+  font-weight: 700;
+  height: 40px;
+}
+.header-inner .header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 35px;
+}
+.header-inner .header-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+.header-inner .header-right ul li a {
+  text-decoration: none;
+  color: #012754;
+}
+
+.custom-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height: 60px;
+  padding: 8px 28px;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: "Funnel Display";
+}
+.custom-btn svg {
+  font-size: 25px;
+  stroke-width: 2px;
+}
+.custom-btn.primary-btn {
+  background: #64CCC9;
+  color: #ffffff;
+}
+.custom-btn.secondary-btn {
+  background: #ffffff;
+  color: #012754;
+}
+.custom-btn.orange-btn {
+  background: #EF6A00;
+  color: #ffffff;
+}
+.custom-btn.btn-lg {
+  height: 70px;
+  padding: 8px 34px;
+}
+
+.hov-btn .btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.hov-btn .btn-text span {
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+.hov-btn:hover .btn-text span {
+  transform: translateY(-25px);
+}
+
+.icon-btn .btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.icon-btn .btn-icon svg {
+  transform: translateY(-2px);
+  transition: 0.3s;
+  min-height: 25px;
+}
+.icon-btn .btn-icon .icon2 {
+  transform: translateX(-35px);
+}
+.icon-btn:hover .btn-icon .icon1 {
+  transform: translateY(-20px) translateX(20px);
+}
+.icon-btn:hover .btn-icon .icon2 {
+  transform: translateY(-27px) translateX(2px);
+}
+
+.reverse-hov-btn .btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.reverse-hov-btn .btn-text span {
+  transform: translateY(5px);
+  transition: 0.3s;
+}
+.reverse-hov-btn:hover .btn-text span {
+  transform: translateY(30px);
+}
+
+.banner-section {
+  padding-top: 185px;
+  position: relative;
+  background: url(../images/bg/banner-bg.png);
+  background-size: 100% auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.banner-top {
+  max-width: 1127px;
+  padding-bottom: 530px;
+}
+.banner-top h1 {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.banner-top h3 {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.banner-top h3 span {
+  position: relative;
+}
+.banner-top h3 span::after {
+  content: "";
+  height: 6px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #64CCC9;
+}
+
+.banner-bottom-left {
+  padding-bottom: 50px;
+}
+.banner-bottom-left p {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 153.85%;
+}
+.banner-bottom-left ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.banner-bottom-left ul li a svg {
+  font-size: 24px;
+}
+
+.banner-bottom-right {
+  padding-bottom: 50px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.features-section .section-title {
+  max-width: 640px;
+}
+
+.features-content {
+  padding-top: 15px;
+  margin-bottom: -30px;
+}
+
+.features-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0px;
+  background: rgba(1, 39, 84, 0.031372549);
+  margin-bottom: 30px;
+}
+.features-card .features-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 125px;
+  min-height: 135px;
+  max-width: 125px;
+  max-height: 135px;
+  background: #E9EBF0;
+}
+.features-card .features-text {
+  padding: 5px 15px;
+}
+.features-card .features-text h6 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+  color: #012754;
+}
+.features-card .features-text p {
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #012754;
+}
+
+.product-section {
+  padding: 100px 0;
+  background: rgba(1, 39, 84, 0.031372549);
+}
+.product-section .section-title {
+  max-width: 400px;
+  margin: auto;
+}
+.product-section .custom-btn {
+  max-width: 315px;
+  margin: 25px auto auto;
+}
+
+.product-card {
+  background: #ffffff;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.0588235294);
+  margin-bottom: 30px;
+  transition: 0.4s;
+}
+.product-card .product-img {
+  max-height: 190px;
+  min-height: 190px;
+  width: 100%;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-card .product-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+  position: relative;
+  z-index: 0;
+}
+.product-card .product-img::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 250%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  transform: translate(-50%, -50%) rotate(45deg) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+.product-card:hover .product-img::before {
+  transform: translate(-50%, -50%) rotate(45deg) scaleX(1);
+}
+.product-card:hover .product-img img {
+  scale: 1.2;
+}
+.product-card .product-data {
+  padding: 25px 20px 5px;
+}
+.product-card .product-data a {
+  text-decoration: none;
+}
+.product-card .product-data a h4 {
+  font-family: "Funnel Display";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0;
+  min-height: 50px;
+  color: #012754;
+}
+.product-card .product-data ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  line-height: 100%;
+  height: 52px;
+  position: relative;
+  color: #012754;
+}
+.product-card .product-data ul li::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(1, 39, 84, 0.04) 0%, rgba(1, 39, 84, 0.2) 50%, rgba(1, 39, 84, 0.04) 100%);
+  left: 0;
+  bottom: -1px;
+}
+.product-card .product-data ul li:nth-last-child(1)::after {
+  display: none;
+}
+.product-card .product-data ul li span {
+  opacity: 70%;
+  font-size: 13px;
+}
+.product-card .product-data ul li strong {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: right;
+}
+
+.why-broker-section {
+  padding: 100px 0px;
+}
+.why-broker-section .section-title {
+  max-width: 420px;
+}
+
+.why-broker-content {
+  margin-bottom: -30px;
+}
+
+.why-broker-card {
+  background: rgba(1, 39, 84, 0.031372549);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.why-broker-card .card-icon {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(1, 39, 84, 0.0509803922);
+}
+.why-broker-card .card-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #012754;
+  padding: 5px 18px;
+}
+
+.project-section {
+  position: relative;
+  overflow: hidden;
+}
+.project-section .project-parallax-bg {
+  position: absolute;
+  inset: -150px 0;
+  background: url("../images/bg/project-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.project-section .overlay {
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(90deg, rgba(1, 39, 84, 0.9) 18.75%, rgba(1, 39, 84, 0) 74.52%);
+}
+.project-section .section-title {
+  max-width: 500px;
+}
+.project-section ul li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.project-section ul li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.project-section ul li svg {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.simple-funding-section {
+  padding: 100px 0px;
+}
+.simple-funding-section .section-title {
+  max-width: 500px;
+  margin: auto;
+}
+.simple-funding-section .submit-btn {
+  margin: auto;
+  margin-top: 25px;
+}
+
+.funding-step {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.funding-step .step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(100, 204, 201, 0.6980392157);
+  color: #64CCC9;
+  height: 50px;
+  min-width: 80px;
+  background: #ffffff;
+  font-family: "Quanta Grotesk Pro";
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 150%;
+}
+.funding-step .text {
+  border: 1px dashed rgba(1, 39, 84, 0.3019607843);
+  background: #ffffff;
+  padding: 20px;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.funding-step.step-2 {
+  margin-top: 80px;
+}
+.funding-step.step-3 {
+  margin-top: 80px;
+  flex-direction: row-reverse;
+}
+.funding-step.step-4 {
+  flex-direction: row-reverse;
+}
+
+.funding-across-section {
+  padding-bottom: 100px;
+  position: relative;
+}
+.funding-across-section .section-title {
+  max-width: 590px;
+  margin: auto;
+}
+.funding-across-section .funding-across-img-1 {
+  position: absolute;
+  width: 11.5%;
+  top: 0;
+  left: 16.5%;
+}
+.funding-across-section .funding-across-img-2 {
+  position: absolute;
+  width: 16.5%;
+  top: 24.2%;
+  left: 0;
+}
+.funding-across-section .funding-across-img-3 {
+  position: absolute;
+  width: 11.5%;
+  top: 0;
+  right: 16.5%;
+}
+.funding-across-section .funding-across-img-4 {
+  position: absolute;
+  width: 16.5%;
+  top: 24.2%;
+  right: 0;
+}
+
+.funding-across-map-img {
+  max-width: 959px;
+  margin: auto;
+  margin-top: 60px;
+}
+.funding-across-map-img img {
+  width: 100%;
+}
+
+.product-guide-section {
+  padding-top: 290px;
+  position: relative;
+  overflow: hidden;
+}
+.product-guide-section .parallax-bg {
+  position: absolute;
+  inset: -100px 0;
+  background: url("../images/bg/prpduct-guide-bg.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.product-guide-inner {
+  background: url("../images/bg/pattern-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 80px;
+}
+.product-guide-inner .section-title {
+  max-width: 630px;
+  margin: auto;
+}
+.product-guide-inner .download-btn {
+  max-width: 310px;
+  margin: 65px auto auto;
+}
+
+.contract-section {
+  background: url(../images/bg/contract-bg.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 120px 0px 100px 0px;
+}
+
+.contract-card {
+  max-width: 1130px;
+  margin: auto;
+  background: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contract-card-left {
+  padding: 50px 40px;
+  background: #012754;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  min-height: 646px;
+}
+.contract-card-left h3 {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 138%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 400px;
+}
+.contract-card-left .women-img {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+}
+.contract-card-left .name {
+  position: relative;
+  z-index: 0;
+  margin-left: -40px;
+  background: rgba(255, 255, 255, 0.1490196078);
+  backdrop-filter: blur(20px);
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 138%;
+  letter-spacing: 0%;
+  width: 65%;
+  text-align: right;
+  color: #ffffff;
+  padding: 5px 15px;
+  margin-top: 140px;
+}
+.contract-card-left .company-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  padding: 10px 15px;
+  margin-left: auto;
+  margin-right: -40px;
+  background: rgba(255, 255, 255, 0.0705882353);
+  backdrop-filter: blur(20px);
+  width: 70%;
+  z-index: 11;
+  position: relative;
+  margin-bottom: 38px;
+}
+.contract-card-left .custom-btn {
+  margin-top: 20px;
+  position: relative;
+  z-index: 11;
+}
+.contract-card-left .call-mail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  position: relative;
+  z-index: 11;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  backdrop-filter: blur(20px);
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-bottom: 10px;
+}
+.contract-card-left .call-mail .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  backdrop-filter: blur(10px);
+}
+.contract-card-left .call-mail .icon svg {
+  color: #64CCC9;
+  font-size: 22px;
+}
+.contract-card-left .call-mail .text {
+  padding: 5px 15px 5px 10px;
+  font-weight: 700;
+  height: 40px;
+}
+
+.contract-card-right {
+  width: 50%;
+  padding: 50px 40px;
+}
+.contract-card-right h3 {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 138%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #012754;
+  max-width: 265px;
+  width: 100%;
+}
+
+.input-fild {
+  position: relative;
+}
+.input-fild .required {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #FF373A;
+  display: none;
+}
+.input-fild label {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #012754;
+}
+.input-fild input {
+  height: 60px;
+  width: 100%;
+  border: 1px solid rgba(1, 39, 84, 0.1490196078);
+  padding: 5px 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #012754;
+  margin-bottom: 16px;
+  outline: none;
+}
+.input-fild textarea {
+  height: 110px;
+  resize: none;
+  width: 100%;
+  border: 1px solid rgba(1, 39, 84, 0.1490196078);
+  padding: 5px 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #012754;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.footer-section {
+  background: url("../images/bg/footer-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer-section .overlay {
+  padding: 100px 0 50px;
+  background: rgba(5, 29, 58, 0.9215686275);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-logo-shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  right: 17%;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 196px;
+  width: 100%;
+  margin-bottom: 45px;
+}
+.footer-logo img {
+  width: 100%;
+}
+
+.footer-top {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-top-left h3 {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.footer-top-right {
+  max-width: 528px;
+  width: 100%;
+  margin-left: auto;
+}
+.footer-top-right ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.footer-top-right ul li a {
+  font-family: "Funnel Display";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+}
+.footer-bottom p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+.footer-bottom p a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-bottom ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.footer-bottom ul li a {
+  font-family: "Funnel Display";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+}

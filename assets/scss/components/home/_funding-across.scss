@@ -1,0 +1,40 @@
+.funding-across-section{
+    padding-bottom: 100px;
+    position: relative;
+    .section-title{
+        max-width: 590px;
+        margin: auto;
+    }
+    .funding-across-img-1{
+        position: absolute;
+        width: 11.5%;
+        top: 0;
+        left: 16.5%;
+    }
+    .funding-across-img-2{
+        position: absolute;
+        width: 16.5%;
+        top: 24.2%;
+        left: 0;
+    }
+    .funding-across-img-3{
+        position: absolute;
+        width: 11.5%;
+        top: 0;
+        right: 16.5%;
+    }
+    .funding-across-img-4{
+        position: absolute;
+        width: 16.5%;
+        top: 24.2%;
+        right: 0;
+    }
+}
+.funding-across-map-img{
+    max-width: 959px;
+    margin: auto;
+    margin-top: 60px;
+    img{
+        width: 100%;
+    }
+}

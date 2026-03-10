@@ -1,0 +1,128 @@
+.footer-section {
+  background: url("../images/bg/footer-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .overlay {
+    padding: 100px 0 50px;
+    background: #051D3AEB;
+    position: relative;
+    overflow: hidden;
+  }
+}
+.footer-logo-shape{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    right: 17%;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 196px;
+  width: 100%;
+  margin-bottom: 45px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.footer-top{
+    position: relative;
+    z-index: 1;
+}
+
+.footer-top-left {
+  h3 {
+    font-family: "Quanta Grotesk Pro";
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0;
+    color: color(whiteColor);
+  }
+}
+
+.footer-top-right {
+  max-width: 528px;
+  width: 100%;
+  margin-left: auto;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    li {
+      a {
+        font-family: "Funnel Display";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0;
+        text-align: right;
+        color: color(whiteColor);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 80px;
+    position: relative;
+    z-index: 1;
+    p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        margin-bottom: 0;
+        color: color(whiteColor);
+        a{
+            color: color(whiteColor);
+            text-decoration: none;
+        }
+    }
+    ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    li {
+      a {
+        font-family: "Funnel Display";
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0;
+        text-align: right;
+        color: color(whiteColor);
+        text-decoration: none;
+      }
+    }
+  }
+}

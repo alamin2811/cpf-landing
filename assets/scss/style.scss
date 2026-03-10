@@ -1,0 +1,20 @@
+@import "./base/variables";
+@import "./base/reset";
+@import "./base/utilities";
+
+@import "./components/_header";
+@import "./components/buttons";
+
+// home style
+@import "./components/home/banner";
+@import "./components/home/features";
+@import "./components/home/product";
+@import "./components/home/why-broker";
+@import "./components/home/project";
+@import "./components/home/simple-funding";
+@import "./components/home/funding-across";
+@import "./components/home/product-guide";
+@import "./components/home/contract";
+
+// footer-style
+@import "./components/footer";
