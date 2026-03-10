@@ -15,8 +15,10 @@
     justify-content: flex-start;
     margin-bottom: 30px;
     .card-icon{
-        height: 75px;
-        width: 75px;
+        min-height: 75px;
+        height: 100%;
+        min-width: 75px;
+        max-width: 75px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -29,5 +31,25 @@
         letter-spacing: 0%;
         color: color(SecondaryColor);
         padding: 5px 18px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .why-broker-section{
+        padding: 80px 0px;
+        .section-title{
+            max-width: 400px;
+        }
+    }
+    
+}
+@media only screen and (max-width: 991px) {
+    .why-broker-section{
+        padding: 70px 0px
+    }
+}
+@media only screen and (max-width: 768px) {
+    .why-broker-section{
+        padding: 60px 0px
     }
 }

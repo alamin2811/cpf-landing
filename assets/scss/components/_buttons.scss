@@ -1,6 +1,7 @@
 .custom-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   font-size: 18px;
   font-style: normal;
@@ -119,5 +120,15 @@
       }
     }
 
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .custom-btn {
+    padding: 5px 20px;
+    &.btn-lg{
+      height: 50px;
+      padding: 5px 20px;
+    }
   }
 }

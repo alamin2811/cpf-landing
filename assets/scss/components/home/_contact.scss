@@ -1,9 +1,10 @@
 .contact-section{
     background: url(../images/bg/contact-bg.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-size: cover;
+    // background-repeat: no-repeat;
     background-position: top center;
     padding: 120px 0px 100px 0px;
+    
 }
 
 .contact-card{
@@ -48,7 +49,7 @@
         font-size: 36px;
         line-height: 138%;
         letter-spacing: 0%;
-        width: 65%;
+        width: 330px;
         text-align: right;
         color: color(whiteColor);
         padding: 5px 15px;
@@ -93,8 +94,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 40px;
-        width: 40px;
+        min-height: 40px;
+        min-width: 40px;
+        max-height: 40px;
+        max-width: 40px;
         background-color: #FFFFFF1A;
         backdrop-filter: blur(10px);
 
@@ -108,6 +111,10 @@
         padding: 5px 15px 5px 10px;
         font-weight: 700;
         height: 40px;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        white-space: nowrap; 
+        overflow: hidden;
       }
     }
 }
@@ -187,3 +194,63 @@
 }
 
 
+
+
+@media only screen and (max-width: 1200px) {
+    .contact-section{
+        padding: 80px 0px;
+    }
+    .contact-card-left {
+        
+    }
+    
+}
+@media only screen and (max-width: 991px) {
+    .contact-section{
+        padding: 70px 0px;
+    }
+    .contact-card{
+        flex-wrap: wrap;
+        .contact-card-left{
+            width: 100%;
+        }
+        .contact-card-right{
+            width: 100%;
+            .custom-btn{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .contact-section{
+        padding: 60px 0px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    
+    .contact-card-left{
+        padding: 30px 20px;
+        h3{
+            font-size: 28px;
+        }
+        .name{
+            margin-left: -20px;
+            font-size: 28px;
+            margin-top: 180px;
+        }
+    }
+    .contact-card-right{
+        padding: 30px 20px;
+        h3{
+            font-size: 28px
+        }
+    }
+    .input-fild {
+        input{
+            height: 50px;
+        }
+    }
+}

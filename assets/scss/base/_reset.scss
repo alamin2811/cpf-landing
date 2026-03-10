@@ -36,6 +36,7 @@ body {
   line-height: 28px;
   letter-spacing: 0;
   background: color(whiteColor);
+ 
 }
 
 .cpf-body {
@@ -87,5 +88,25 @@ ul {
     .w-#{$i} {
       width: $i * 1%;
     }
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .cpf-body {
+    margin-bottom: 440px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  body{
+    font-size: 14px;
+  }
+  .cpf-body {
+    margin-bottom: 420px;
+  }
+}
+@media only screen and (max-width: 511px) {
+  .cpf-body {
+    margin-bottom: 480px;
   }
 }

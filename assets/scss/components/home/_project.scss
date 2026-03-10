@@ -1,13 +1,10 @@
 .project-section {
-  // background: url(../images/bg/project-bg.png);
-  // background-size: cover;
-  // background-position: center center;
   position: relative;
   overflow: hidden;
 
   .project-parallax-bg {
     position: absolute;
-    inset: -150px 0;
+    inset: -350px 0;
     background: url("../images/bg/project-bg.png");
     background-size: cover;
     background-position: center;
@@ -46,5 +43,61 @@
         margin-top: 10px;
       }
     }
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .project-section {
+     .overlay {
+      padding: 80px 0px;
+     }
+     .section-title {
+        max-width: 400px;
+     }
+  }
+  
+}
+@media only screen and (max-width: 991px) {
+  .project-section {
+     .overlay {
+      padding: 70px 0px;
+      background: linear-gradient(90deg, rgba(1, 39, 84, 0.9) 30%, rgba(1, 39, 84, 0) 74.52%);
+     }
+     ul{
+      li{
+        font-size: 18px;
+        gap: 8px;
+        svg{
+          font-size: 20px;
+        }
+      }
+     }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .project-section {
+     .overlay {
+      padding: 60px 0px;
+     }
+     .section-title {
+        max-width: 350px;
+     }
+     ul{
+      li{
+        font-size: 16px;
+        svg{
+          font-size: 18px;
+          margin-top: 12px;
+        }
+      }
+     }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .project-section {
+     .overlay {
+        background: linear-gradient(90deg, rgba(1, 39, 84, 0.9) 60%, rgba(1, 39, 84, 0) 100%);
+     }
   }
 }

@@ -4,10 +4,13 @@
     .section-title{
         max-width: 590px;
         margin: auto;
+        position: relative;
+        z-index: 1;
     }
     .funding-across-images{
         img{
             object-fit: cover;
+            width: 100%;
         }
     }
     .funding-across-img-1{
@@ -15,31 +18,74 @@
         width: 11.5%;
         top: 0;
         left: 16.5%;
+        z-index: 0;
     }
     .funding-across-img-2{
         position: absolute;
         width: 16.5%;
         top: 24.2%;
         left: 0;
+        z-index: 0;
     }
     .funding-across-img-3{
         position: absolute;
         width: 11.5%;
         top: 0;
         right: 16.5%;
+        z-index: 0;
     }
     .funding-across-img-4{
         position: absolute;
         width: 16.5%;
         top: 24.2%;
         right: 0;
+        z-index: 0;
     }
 }
 .funding-across-map-img{
     max-width: 959px;
     margin: auto;
     margin-top: 60px;
+    position: relative;
+    z-index: 1;
     img{
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 1200px) {
+   .funding-across-section{
+        padding-bottom: 80px;
+        .section-title{
+            max-width: 500px;
+        }
+   }
+   .funding-across-map-img{
+        max-width: 70%;
+        margin: auto;
+   }
+}
+@media only screen and (max-width: 991px) {
+   .funding-across-section{
+        padding-bottom: 70px;
+   }
+   
+   .funding-across-images{
+        .funding-across{
+            &-img-1,
+            &-img-2,
+            &-img-3,
+            &-img-4 {
+                transform: translateY(35vh);
+            }
+        }
+   }
+}
+@media only screen and (max-width: 768px) {
+   .funding-across-section{
+        padding-bottom: 60px;
+        .section-title{
+            max-width: 300px;
+        }
+   }
 }
