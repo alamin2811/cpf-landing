@@ -5,18 +5,18 @@
     gsap.registerPlugin(ScrollTrigger);
 
 
-    // if (document.body.classList.contains("smooth-scroll")) {
+    if (document.body.classList.contains("smooth-scroll")) {
 
-    //     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+        gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-    //     ScrollSmoother.create({
-    //         wrapper: "#smooth-wrapper",
-    //         content: "#smooth-content",
-    //         smooth: 1.5,
-    //         effects: true
-    //     });
+        ScrollSmoother.create({
+            wrapper: "#smooth-wrapper",
+            content: "#smooth-content",
+            smooth: 1.5,
+            effects: true
+        });
 
-    // }
+    }
 
     // projectParallax
     var projectParallax = $(".project-section");
