@@ -10,7 +10,7 @@
   overflow: visible;
   position: relative;
   z-index: 1;
-  margin-bottom: 285px;
+  margin-bottom: 307px;
 }
 
 .submit-deal-banner-inner {
@@ -51,7 +51,7 @@
 
 .call-mail-btn {
   margin-top: 70px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   h6 {
     font-family: "Quanta Grotesk Pro";
     font-weight: 600;
@@ -79,27 +79,26 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 40px;
-      min-width: 40px;
-      max-height: 40px;
-      max-width: 40px;
+      min-height: 50px;
+      min-width: 50px;
+      max-height: 50px;
+      max-width: 50px;
       background-color: color(primaryColor);
       backdrop-filter: blur(10px);
-
-      svg {
-        color: color(whiteColor);
-        font-size: 22px;
+      img {
+        filter: brightness(100);
       }
     }
 
     .text {
-      padding: 5px 15px 5px 10px;
+      padding: 10px 15px 10px 20px;
       font-weight: 700;
-      height: 40px;
+      height: 50px;
       text-overflow: ellipsis;
       -webkit-line-clamp: 1;
       white-space: nowrap;
       overflow: hidden;
+      font-size: 20px;
     }
   }
 }
@@ -108,10 +107,10 @@
   background: #FFFFFF;
   width: 100%;
   margin-left: auto;
-  padding: 50px;
+  padding: 50px 50px 70px 50px;
   
   .input-fild{
-    margin-bottom: 5px;
+    margin-bottom: 5.2px;
   }
 
   .title {

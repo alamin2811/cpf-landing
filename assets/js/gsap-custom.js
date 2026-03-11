@@ -60,39 +60,55 @@
         });
     }
 
-    const section = document.querySelector("#fundingAcross");
-    const mapImg = document.querySelector(".funding-across-map-img img");
-    const images = document.querySelector(".funding-across-images");
+    // ====== Funding Across Section Scroll Animation ======
+// ====== Funding Across Section Scroll Animation ======
+const section = document.querySelector("#fundingAcross");
+const mapImg = document.querySelector(".funding-across-map-img img");
+const images = document.querySelector(".funding-across-images");
+const content = document.querySelector(".funding-across-content");
 
-    if (section && mapImg && images) {
+if (section && mapImg && images && content) {
+    content.style.paddingTop = "30px";
 
-        const tl = gsap.timeline({
-            scrollTrigger: {
+    ScrollTrigger.matchMedia({
+
+        "(min-width: 768px)": function () {
+
+            // ===== 1️⃣ Pin the images container permanently =====
+            ScrollTrigger.create({
                 trigger: section,
                 start: "top top",
-                end: "+=700",
-                scrub: true,
-                pin: section,
-                anticipatePin: 1
-            }
-        });
+                end: "center top",
+                pin: images,
+                pinSpacing: false 
+            });
 
-        // Map zoom out
-        tl.fromTo(
-            mapImg,
-            { scale: 1 },
-            { scale: 0.7, ease: "none" },
-            0
-        );
+            // ===== 2️⃣ Timeline for map shrink + content move =====
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top top",
+                    end: "+=400",   // scroll distance for map/content move
+                    scrub: true
+                }
+            })
+            // Shrink map
+            .to(mapImg, {
+                scale: 0.7,
+                ease: "none"
+            })
+            // Move map + content up
+            .to([mapImg, content], {
+                y: -100,
+                ease: "power1.out"
+            });
 
-        // Make images sticky at the top of viewport
-        ScrollTrigger.create({
-            trigger: section,        // still use section as trigger
-            start: "top top",
-            end: "top top",       // sticky until the section ends
-            pin: images,             // pin the images container
-            pinSpacing: false        // no extra spacing added
-        });
-    }
+            // ===== 3️⃣ Section scroll continues after map/content animation =====
+            // No extra pin needed, images remain sticky
 
+        }
+
+    });
+
+}
 })(jQuery);

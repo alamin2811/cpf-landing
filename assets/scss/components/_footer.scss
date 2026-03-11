@@ -88,6 +88,7 @@
     gap: 20px;
     padding-top: 80px;
     position: relative;
+    padding-right: 40px;
     z-index: 1;
     p{
         font-weight: 500;
@@ -149,11 +150,14 @@
         padding-top: 40px;
         p{
             max-width: 45%;
+            line-height: 160%;
+            
         }
     }
     .footer-top-left {
         h3{
             font-size: 32px;
+            line-height: 140%;
             max-width: 400px;
             margin-bottom: 15px;
         }
@@ -177,6 +181,8 @@
         }
         ul{
             justify-content: flex-start;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
     }
 }
@@ -194,6 +200,9 @@
     }
     .footer-bottom{
         padding-top: 0px;
+        p{
+            padding-right: 20px;
+        }
     }
     .footer-logo-shape{
         display: none;

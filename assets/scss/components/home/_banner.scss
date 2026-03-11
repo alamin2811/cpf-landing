@@ -36,6 +36,7 @@
     letter-spacing: 0;
     text-transform: uppercase;
     margin-bottom: 20px;
+    color: color(SecondaryColor);
   }
 
   h3 {
@@ -44,6 +45,7 @@
     font-size: 40px;
     line-height: 150%;
     letter-spacing: 0;
+    color: color(SecondaryColor);
 
     span {
       position: relative;
@@ -169,13 +171,15 @@
 @media only screen and (max-width: 768px) {
   .banner-top {
     padding-bottom: 30px;
+    margin-top: -20px;
     h1 {
       font-size: 40px;
+      margin-bottom: 15px;
     }
     
     h3 {
       font-size: 24px;
-
+      margin-bottom: 20px;
       span {
         &::after {
           height: 3px;

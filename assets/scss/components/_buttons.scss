@@ -123,6 +123,34 @@
   }
 }
 
+.back-to-top{
+  position: absolute;
+  right: 0;
+  .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 25px;
+    overflow: hidden;
+    transition: .3s;
+    
+    span {
+      transform: translateY(-2px);
+      transition: .3s;
+    }
+  }
+
+  &:hover {
+    .btn-icon {
+      span {
+        transform: translateY(-30px);
+      }
+    }
+
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .custom-btn {
     padding: 5px 20px;
