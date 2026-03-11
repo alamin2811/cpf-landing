@@ -530,6 +530,17 @@ ul {
   line-height: 150%;
 }
 
+h3.title {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #012754;
+}
+
 @media only screen and (max-width: 1360px) {
   .container {
     max-width: 1200px;
@@ -683,6 +694,14 @@ ul {
 }
 .mobile-menu-logo img {
   width: 100%;
+}
+
+.header-white .header-inner .header-left .call .number {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.0509803922);
+}
+.header-white .header-inner .header-right ul li a {
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 1360px) {
@@ -1861,6 +1880,216 @@ ul {
     height: 50px;
   }
 }
+.submit-deal-body {
+  background: #F2F4F6;
+}
+
+.submit-deal-banner {
+  background: #012754;
+  max-height: 760px;
+  min-height: 760px;
+  padding-top: 200px;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 285px;
+}
+
+.submit-deal-banner-inner {
+  position: relative;
+}
+.submit-deal-banner-inner h2 {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.submit-deal-banner-inner h3 {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.submit-deal-banner-inner h4 {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: -75px;
+}
+
+.call-mail-btn {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.call-mail-btn h6 {
+  font-family: "Quanta Grotesk Pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #012754;
+}
+.call-mail-btn .call-mail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  position: relative;
+  z-index: 11;
+  color: #012754;
+  background-color: rgba(1, 39, 84, 0.0509803922);
+  backdrop-filter: blur(20px);
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-bottom: 10px;
+}
+.call-mail-btn .call-mail .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  max-width: 40px;
+  background-color: #64CCC9;
+  backdrop-filter: blur(10px);
+}
+.call-mail-btn .call-mail .icon svg {
+  color: #ffffff;
+  font-size: 22px;
+}
+.call-mail-btn .call-mail .text {
+  padding: 5px 15px 5px 10px;
+  font-weight: 700;
+  height: 40px;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.submit-deal-form-card {
+  background: #FFFFFF;
+  width: 100%;
+  margin-left: auto;
+  padding: 50px;
+}
+.submit-deal-form-card .input-fild {
+  margin-bottom: 5px;
+}
+.process-section {
+  padding-bottom: 100px;
+}
+
+.process-section-left {
+  background: #FFFFFF;
+  padding: 60px 50px;
+}
+.process-section-left .title {
+  max-width: 350px;
+}
+.process-section-left ul {
+  margin-top: 25px;
+}
+.process-section-left ul li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+.process-section-left ul li .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  max-width: 40px;
+  font-family: "Funnel Display";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #64CCC9;
+  background: rgba(1, 39, 84, 0.0509803922);
+  position: relative;
+}
+.process-section-left ul li .number::after {
+  content: "";
+  height: 25px;
+  width: 1px;
+  border-right: 1px dashed rgba(1, 39, 84, 0.3019607843);
+  position: absolute;
+  top: 45px;
+  left: 19px;
+}
+.process-section-left ul li p {
+  font-family: "Funnel Display";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.process-section-left ul li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.process-section-left ul li:nth-last-child(1) .number::after {
+  display: none;
+}
+
+.process-section-right {
+  padding: 60px 50px;
+}
+.process-section-right .title {
+  max-width: 350px;
+}
+.process-section-right ul {
+  margin-top: 25px;
+}
+.process-section-right ul li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+.process-section-right ul li .icon {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  max-width: 22px;
+}
+.process-section-right ul li p {
+  font-family: "Funnel Display";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.process-section-right ul li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 .footer-section {
   background: url("../images/bg/footer-bg.png");
   background-size: cover;

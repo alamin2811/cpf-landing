@@ -136,6 +136,28 @@
   }
 }
 
+.header-white{
+  .header-inner {
+  .header-left {
+    .call {
+      .number{
+        color: color(whiteColor);
+        background: #FFFFFF0D;
+      }
+    }
+  }
+    .header-right {
+      ul{
+        li{
+          a{
+            color: color(whiteColor);
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1360px) {
   .header-inner {
     .header-left {
