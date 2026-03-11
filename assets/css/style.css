@@ -853,13 +853,26 @@ ul {
   position: relative;
   background: url("../images/bg/banner-bg.png");
   background-size: 100% auto;
-  background-position: bottom center;
+  background-position: top center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.banner-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(1, 39, 84, 0) 46.72%, rgba(1, 39, 84, 0.92) 97.65%);
+  z-index: 0;
 }
 
 .banner-top {
   max-width: 1127px;
   padding-bottom: 40%;
+  position: relative;
+  z-index: 1;
 }
 .banner-top h1 {
   font-family: "Quanta Grotesk Pro";
@@ -888,6 +901,11 @@ ul {
   bottom: 0;
   left: 0;
   background: #64CCC9;
+}
+
+.banner-bottom {
+  position: relative;
+  z-index: 1;
 }
 
 .banner-bottom-left {
@@ -941,16 +959,6 @@ ul {
     background-position: top;
     padding-top: 150px;
   }
-  .banner-section::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 80%;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(1, 39, 84, 0) 0%, rgba(1, 39, 84, 0.5) 80%);
-    z-index: 0;
-  }
   .banner-top {
     padding-bottom: 50px;
     position: relative;
@@ -958,10 +966,6 @@ ul {
   }
   .banner-top h1 {
     font-size: 70px;
-    color: #ffffff;
-  }
-  .banner-top h3 {
-    color: #ffffff;
   }
   .banner-bottom {
     padding-bottom: 50px;
@@ -1469,6 +1473,9 @@ ul {
   .simple-funding-section {
     padding: 60px 0px;
   }
+  .funding-step .step {
+    min-width: 75px;
+  }
 }
 .funding-across-section {
   padding-bottom: 100px;
@@ -1480,38 +1487,41 @@ ul {
   position: relative;
   z-index: 1;
 }
+.funding-across-section .funding-across-images {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.funding-across-section .funding-across-images .funding-across-left {
+  width: 50%;
+}
+.funding-across-section .funding-across-images .funding-across-right {
+  width: 50%;
+}
 .funding-across-section .funding-across-images img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
 }
-.funding-across-section .funding-across-img-1 {
-  position: absolute;
-  width: 11.5%;
-  top: 0;
-  left: 16.5%;
-  z-index: 0;
+.funding-across-section .funding-across-images .funding-across-img-1 {
+  width: 22.92%;
+  margin-left: 32.82%;
+  margin-right: auto;
 }
-.funding-across-section .funding-across-img-2 {
-  position: absolute;
-  width: 16.5%;
-  top: 24.2%;
-  left: 0;
-  z-index: 0;
+.funding-across-section .funding-across-images .funding-across-img-2 {
+  width: 32.82%;
+  margin-left: 0;
+  margin-right: auto;
 }
-.funding-across-section .funding-across-img-3 {
-  position: absolute;
-  width: 11.5%;
-  top: 0;
-  right: 16.5%;
-  z-index: 0;
+.funding-across-section .funding-across-images .funding-across-img-3 {
+  width: 22.92%;
+  margin-right: 32.82%;
+  margin-left: auto;
 }
-.funding-across-section .funding-across-img-4 {
-  position: absolute;
-  width: 16.5%;
-  top: 24.2%;
-  right: 0;
-  z-index: 0;
+.funding-across-section .funding-across-images .funding-across-img-4 {
+  width: 32.82%;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .funding-across-map-img {
@@ -1541,9 +1551,6 @@ ul {
   .funding-across-section {
     padding-bottom: 70px;
   }
-  .funding-across-images .funding-across-img-1, .funding-across-images .funding-across-img-2, .funding-across-images .funding-across-img-3, .funding-across-images .funding-across-img-4 {
-    transform: translateY(35vh);
-  }
 }
 @media only screen and (max-width: 768px) {
   .funding-across-section {
@@ -1551,6 +1558,12 @@ ul {
   }
   .funding-across-section .section-title {
     max-width: 300px;
+  }
+  .funding-across-section .pin-spacer {
+    display: none !important;
+  }
+  .funding-across-section .funding-across-images {
+    display: none;
   }
 }
 .product-guide-section {
@@ -1864,6 +1877,9 @@ ul {
   background: rgba(5, 29, 58, 0.9215686275);
   position: relative;
   overflow: hidden;
+}
+.footer-section.relative {
+  position: relative;
 }
 
 .footer-logo-shape {

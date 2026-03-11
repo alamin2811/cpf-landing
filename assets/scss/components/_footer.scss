@@ -14,6 +14,9 @@
     position: relative;
     overflow: hidden;
   }
+  &.relative{
+    position: relative;  
+  }
 }
 .footer-logo-shape{
     position: absolute;
