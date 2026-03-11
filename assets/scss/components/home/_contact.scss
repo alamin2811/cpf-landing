@@ -24,7 +24,7 @@
     min-height: 646px;
     h3{
         font-family: "Quanta Grotesk Pro";
-        font-weight: 500;
+        font-weight: 600;
         font-size: 36px;
         line-height: 138%;
         letter-spacing: 0%;
@@ -123,7 +123,7 @@
     padding: 50px 40px;
     h3{
         font-family: "Quanta Grotesk Pro";
-        font-weight: 500;
+        font-weight: 600;
         font-size: 36px;
         line-height: 138%;
         letter-spacing: 0%;
@@ -158,11 +158,14 @@
     }
     label{
         font-family: "Quanta Grotesk Pro";
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
         text-transform: uppercase;
         color: color(SecondaryColor);
+        span{
+            opacity: 50%;
+        }
     }
     input{
         height: 60px;

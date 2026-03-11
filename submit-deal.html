@@ -38,12 +38,12 @@
                             </div>
                             <div class="header-right">
                                 <ul class="menu">
-                                    <li><a href="#">Lending Products</a></li>
-                                    <li><a href="#">Why us</a></li>
-                                    <li><a href="#">Funding Process</a></li>
-                                    <li><a href="#">Product Guide</a></li>
+                                    <li><a href="#productSection">Lending Products</a></li>
+                                    <li><a href="#WhyUs">Why us</a></li>
+                                    <li><a href="#FundingProcess">Funding Process</a></li>
+                                    <li><a href="./index.html#productGuide">Product Guide</a></li>
                                 </ul>
-                                <a href="#" class="header-btn primary-btn custom-btn hov-btn icon-btn">
+                                <a href="./submit-deal.html" class="header-btn primary-btn custom-btn hov-btn icon-btn">
                                     <span class="btn-text">
                                         <span>Contact us </span>
                                         <span>Contact us </span>
@@ -63,42 +63,43 @@
                                 <span class="iconify" data-icon="ri:menu-3-line"></span>
                             </button>
 
-                            <!-- mobile menu drawer -->
-                            <div class="mobile-menu">
-                                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
 
-                                    <div class="offcanvas-header mobile-menu-header">
-                                        <a href="#" class="logo mobile-menu-logo"><img
-                                                src="./assets/images/logo/logo.png" alt="img"></a>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                                    </div>
+                        </div>
+                    </div>
+                    <!-- mobile menu drawer -->
+                    <div class="mobile-menu">
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
 
-                                    <div class="offcanvas-body">
-
-                                        <ul class="menu">
-                                            <li><a href="#">Lending Products</a></li>
-                                            <li><a href="#">Why us</a></li>
-                                            <li><a href="#">Funding Process</a></li>
-                                            <li><a href="#">Product Guide</a></li>
-                                        </ul>
-
-                                        <a href="#" class="header-btn primary-btn custom-btn hov-btn icon-btn">
-                                            <span class="btn-text">
-                                                <span>Contact us </span>
-                                                <span>Contact us </span>
-                                            </span>
-                                            <div class="btn-icon">
-                                                <span class="iconify icon1" data-icon="system-uicons:arrow-top-right"
-                                                    width="24"></span>
-                                                <span class="iconify icon2" data-icon="system-uicons:arrow-top-right"
-                                                    width="24"></span>
-                                            </div>
-                                        </a>
-
-                                    </div>
-
-                                </div>
+                            <div class="offcanvas-header mobile-menu-header">
+                                <a href="#" class="logo mobile-menu-logo"><img src="./assets/images/logo/logo.png"
+                                        alt="img"></a>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                             </div>
+
+                            <div class="offcanvas-body">
+
+                                <ul class="menu">
+                                    <li><a href="./index.html#productSection">Lending Products</a></li>
+                                    <li><a href="./index.html#WhyUs">Why us</a></li>
+                                    <li><a href="./index.html#FundingProcess">Funding Process</a></li>
+                                    <li><a href="./index.html#productGuide">Product Guide</a></li>
+                                </ul>
+
+                                <a href="./submit-deal.html" class="header-btn primary-btn custom-btn hov-btn icon-btn">
+                                    <span class="btn-text">
+                                        <span>Contact us </span>
+                                        <span>Contact us </span>
+                                    </span>
+                                    <div class="btn-icon">
+                                        <span class="iconify icon1" data-icon="system-uicons:arrow-top-right"
+                                            width="24"></span>
+                                        <span class="iconify icon2" data-icon="system-uicons:arrow-top-right"
+                                            width="24"></span>
+                                    </div>
+                                </a>
+
+                            </div>
+
                         </div>
                     </div>
                 </header>
@@ -118,14 +119,16 @@
                                     <div class="call-mail-btn">
                                         <h6>Call Anna</h6>
                                         <a href="tel:+0744399644" class="call-mail">
-                                            <div class="icon"><span class="iconify" data-icon="mdi:phone-forward"></span></div>
+                                            <div class="icon"><span class="iconify"
+                                                    data-icon="mdi:phone-forward"></span></div>
                                             <div class="text">07 4439 9644</div>
                                         </a>
                                     </div>
                                     <div class="call-mail-btn mt-0">
                                         <h6>Email Anna</h6>
                                         <a href="mailto:anna@commercialpropertyfunding.com.au" class="call-mail">
-                                            <div class="icon"><span class="iconify" data-icon="material-symbols-light:outgoing-mail"></span></div>
+                                            <div class="icon"><span class="iconify"
+                                                    data-icon="material-symbols-light:outgoing-mail"></span></div>
                                             <div class="text">anna@commercialpropertyfunding.com.au</div>
                                         </a>
                                     </div>
@@ -160,7 +163,8 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="input-fild">
-                                                    <label for="Company">Company</label>
+                                                    <span class="required">Required</span>
+                                                    <label for="Company">Company <span>*</span></label>
                                                     <input type="text" name="Company" placeholder="Your company  name">
                                                 </div>
                                             </div>
@@ -173,14 +177,17 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="input-fild">
-                                                    <label for="FundingRequirement">Funding Requirement</label>
+                                                    <span class="required">Required</span>
+                                                    <label for="FundingRequirement">Funding Requirement
+                                                        <span>*</span></label>
                                                     <input type="text" name="FundingRequirement"
                                                         placeholder="e.g. $2,500,000">
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="input-fild">
-                                                    <label for="FundingType">Funding Type</label>
+                                                    <span class="required">Required</span>
+                                                    <label for="FundingType">Funding Type <span>*</span></label>
                                                     <input type="text" name="FundingType"
                                                         placeholder="e.g. Construction finance, land subdivision">
                                                 </div>
@@ -215,7 +222,7 @@
 
                     </div>
                 </section>
-                
+
                 <!-- process-section section -->
                 <section class="process-section">
                     <div class="container">
@@ -224,36 +231,162 @@
                                 <div class="process-section-left">
                                     <h3 class="title">HOW THE PROCESS WORKS</h3>
                                     <ul>
-                                        <li><div class="number">01</div> <p>Send us the deal summary</p></li>
-                                        <li><div class="number">02</div> <p>Letter of Offer issued within 48h</p></li>
-                                        <li><div class="number">03</div> <p>Loan documents executed</p></li>
-                                        <li><div class="number">04</div> <p>Settlement within 7 days</p></li>
+                                        <li>
+                                            <div class="number">01</div>
+                                            <p>Send us the deal summary</p>
+                                        </li>
+                                        <li>
+                                            <div class="number">02</div>
+                                            <p>Letter of Offer issued within 48h</p>
+                                        </li>
+                                        <li>
+                                            <div class="number">03</div>
+                                            <p>Loan documents executed</p>
+                                        </li>
+                                        <li>
+                                            <div class="number">04</div>
+                                            <p>Settlement within 7 days</p>
+                                        </li>
                                     </ul>
                                 </div>
-                            </div>                            
+                            </div>
                             <div class="col-md-6 p-0">
                                 <div class="process-section-right">
                                     <h3 class="title">DOCUMENTS WE MAY REQUEST</h3>
                                     <ul>
-                                        <li><div class="icon"><img src="./assets/images/icons/ruler&pen.png" alt="icon"></div> <p>Development plans or drawings</p></li>
-                                        <li><div class="icon"><img src="./assets/images/icons/blend-2.png" alt="icon"></div> <p>Project feasibility</p></li>
-                                        <li><div class="icon"><img src="./assets/images/icons/shield-tick.png" alt="icon"></div> <p>Development approval (if available)</p></li>
-                                        <li><div class="icon"><img src="./assets/images/icons/building.png" alt="icon"></div> <p>Builder details</p></li>
-                                        <li><div class="icon"><img src="./assets/images/icons/coin.png" alt="icon"></div> <p>Property valuation (if available)</p></li>
+                                        <li>
+                                            <div class="icon"><img src="./assets/images/icons/ruler&pen.svg" alt="icon">
+                                            </div>
+                                            <p>Development plans or drawings</p>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="./assets/images/icons/blend-2.svg" alt="icon">
+                                            </div>
+                                            <p>Project feasibility</p>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="./assets/images/icons/shield-tick.svg"
+                                                    alt="icon"></div>
+                                            <p>Development approval (if available)</p>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="./assets/images/icons/building.svg" alt="icon">
+                                            </div>
+                                            <p>Builder details</p>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="./assets/images/icons/coin.svg" alt="icon">
+                                            </div>
+                                            <p>Property valuation (if available)</p>
+                                        </li>
                                     </ul>
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 <section class="faq-section">
                     <div class="container">
-                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="title">HOW THE PROCESS WORKS</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="accordion custom-faq" id="faqAccordion">
+
+                                    <!-- item -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                data-bs-target="#faq1">
+                                                What types of deals can I submit?
+                                            </button>
+                                        </h2>
+                                        <div id="faq1" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                You can submit a wide range of commercial lending deals including
+                                                property, development, and business funding opportunities.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" data-bs-toggle="collapse"
+                                                data-bs-target="#faq2">
+                                                How quickly can you issue a Letter of Offer?
+                                            </button>
+                                        </h2>
+                                        <div id="faq2" class="accordion-collapse collapse show"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                In many cases, we can issue a Letter of Offer within 48 hours once the
+                                                deal has been reviewed and the required information has been received.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                data-bs-target="#faq3">
+                                                Do I need all documents ready?
+                                            </button>
+                                        </h2>
+                                        <div id="faq3" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                While having documents ready helps speed up the process, we can guide
+                                                you on what is required during the submission stage.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                data-bs-target="#faq4">
+                                                What funding amounts are available?
+                                            </button>
+                                        </h2>
+                                        <div id="faq4" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                Funding amounts vary depending on the project, borrower profile, and
+                                                lending structure.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                data-bs-target="#faq5">
+                                                How long does settlement usually take?
+                                            </button>
+                                        </h2>
+                                        <div id="faq5" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                Settlement timelines vary depending on the complexity of the deal and
+                                                documentation requirements.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                
-                
+
+
                 <!-- Footer section -->
                 <footer class="footer-section relative">
                     <div class="overlay">
@@ -269,24 +402,16 @@
                                             <h3>Property & Construction Finance for Businesses</h3>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="footer-top-right">
-                                            <ul>
-                                                <li><a href="#">Product Guide</a></li>
-                                                <li><a href="#">Submit a Deal</a></li>
-                                                <li><a href="#">Broker Information</a></li>
-                                                <li><a href="#">Contact</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="footer-bottom">
                                 <p>Copyright ©2026 <a href="#">Commercial Property Funding</a> - All rights reserved.
                                 </p>
                                 <ul>
-                                    <li><a href="#">Terms of Use</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="./index.html#productGuide">Product Guide</a></li>
+                                    <li><a href="./submit-deal.html">Submit a Deal</a></li>
+                                    <li><a href="./submit-deal.html">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -294,43 +419,7 @@
                 </footer>
             </div>
 
-            <!-- Footer section -->
-            <footer class="footer-section">
-                <div class="overlay">
-                    <img src="./assets/images/shape/footer-logo-shape.png" alt="img" class="footer-logo-shape">
-                    <div class="container">
-                        <div class="footer-top">
-                            <a href="./index.html" class="footer-logo">
-                                <img src="./assets/images/logo/logo-white.png" alt="logo">
-                            </a>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="footer-top-left">
-                                        <h3>Property & Construction Finance for Businesses</h3>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="footer-top-right">
-                                        <ul>
-                                            <li><a href="#">Product Guide</a></li>
-                                            <li><a href="#">Submit a Deal</a></li>
-                                            <li><a href="#">Broker Information</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-bottom">
-                            <p>Copyright ©2026 <a href="#">Commercial Property Funding</a> - All rights reserved.</p>
-                            <ul>
-                                <li><a href="#">Terms of Use</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+
         </div>
     </div>
 

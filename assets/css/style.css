@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
 @font-face {
   font-family: "Quanta Grotesk Pro";
@@ -497,7 +498,7 @@ ul {
 }
 @media only screen and (max-width: 991px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
   .cpf-body {
     margin-bottom: 420px;
@@ -517,7 +518,7 @@ ul {
 
 .section-title h2 {
   font-family: "Quanta Grotesk Pro";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 50px;
   line-height: 120%;
   letter-spacing: 0;
@@ -532,7 +533,7 @@ ul {
 
 h3.title {
   font-family: "Quanta Grotesk Pro";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 36px;
   line-height: 50px;
   letter-spacing: 0%;
@@ -701,6 +702,9 @@ h3.title {
   background: rgba(255, 255, 255, 0.0509803922);
 }
 .header-white .header-inner .header-right ul li a {
+  color: #ffffff;
+}
+.header-white .menu-btn {
   color: #ffffff;
 }
 
@@ -874,7 +878,6 @@ h3.title {
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .banner-section::after {
   content: "";
@@ -895,7 +898,7 @@ h3.title {
 }
 .banner-top h1 {
   font-family: "Quanta Grotesk Pro";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 80px;
   line-height: 110%;
   letter-spacing: 0;
@@ -996,6 +999,9 @@ h3.title {
   .banner-section {
     padding-top: 130px;
   }
+  .banner-section::after {
+    background: linear-gradient(180deg, rgba(1, 39, 84, 0) 15.91%, rgba(1, 39, 84, 0.92) 97.65%);
+  }
   .banner-top h1 {
     font-size: 50px;
   }
@@ -1024,18 +1030,28 @@ h3.title {
   .banner-top h3 span::after {
     height: 3px;
   }
+  .banner-bottom-right {
+    padding-bottom: 0;
+  }
   .banner-bottom-left p {
-    font-size: 20px;
+    font-size: 18px;
   }
   .banner-bottom-left ul li {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 16px;
+  }
+  .banner-bottom-left ul li svg {
+    font-size: 20px;
+    transform: translateY(4px);
   }
 }
 @media only screen and (max-width: 575px) {
   .banner-bottom-right {
     flex-wrap: wrap;
+    row-gap: 20px;
   }
-  .banner-bottom-right button {
+  .banner-bottom-right .custom-btn {
     width: 100%;
     justify-content: center;
   }
@@ -1256,6 +1272,9 @@ h3.title {
   .product-card .product-data a h4 {
     min-height: auto;
   }
+  .product-card .product-data ul li strong {
+    font-size: 15px;
+  }
 }
 .why-broker-section {
   padding: 100px 0px;
@@ -1310,6 +1329,9 @@ h3.title {
 @media only screen and (max-width: 768px) {
   .why-broker-section {
     padding: 60px 0px;
+  }
+  .why-broker-card .card-text {
+    font-size: 18px;
   }
 }
 .project-section {
@@ -1403,6 +1425,7 @@ h3.title {
 .simple-funding-section .submit-btn {
   margin: auto;
   margin-top: 25px;
+  max-width: 230px;
 }
 
 .funding-step {
@@ -1494,6 +1517,12 @@ h3.title {
   }
   .funding-step .step {
     min-width: 75px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .funding-step {
+    flex-direction: row !important;
+    margin-bottom: 20px !important;
   }
 }
 .funding-across-section {
@@ -1601,7 +1630,7 @@ h3.title {
 
 .product-guide-inner {
   background: url("../images/bg/pattern-bg.png");
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   padding: 80px 15px 0px 15px;
@@ -1666,7 +1695,7 @@ h3.title {
 }
 .contact-card-left h3 {
   font-family: "Quanta Grotesk Pro";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 36px;
   line-height: 138%;
   letter-spacing: 0%;
@@ -1763,7 +1792,7 @@ h3.title {
 }
 .contact-card-right h3 {
   font-family: "Quanta Grotesk Pro";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 36px;
   line-height: 138%;
   letter-spacing: 0%;
@@ -1797,11 +1826,14 @@ h3.title {
 }
 .input-fild label {
   font-family: "Quanta Grotesk Pro";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
   color: #012754;
+}
+.input-fild label span {
+  opacity: 50%;
 }
 .input-fild input {
   height: 60px;
@@ -1900,7 +1932,7 @@ h3.title {
 }
 .submit-deal-banner-inner h2 {
   font-family: "Quanta Grotesk Pro";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 50px;
   line-height: 150%;
   letter-spacing: 0;
@@ -1919,7 +1951,7 @@ h3.title {
 }
 .submit-deal-banner-inner h4 {
   font-family: "Quanta Grotesk Pro";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 36px;
   line-height: 50px;
   letter-spacing: 0;
@@ -1934,7 +1966,7 @@ h3.title {
 }
 .call-mail-btn h6 {
   font-family: "Quanta Grotesk Pro";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0;
@@ -2090,6 +2122,53 @@ h3.title {
   margin-bottom: 0;
 }
 
+.faq-section {
+  padding-bottom: 100px;
+}
+.faq-section .title {
+  max-width: 400px;
+}
+.faq-section .custom-faq .accordion-item {
+  border: none;
+  margin-bottom: 15px;
+  background: #FFFFFF;
+  border-radius: 0;
+}
+.faq-section .custom-faq .accordion-button {
+  background: #FFFFFF;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #012754;
+  padding: 25px 30px;
+  box-shadow: none;
+}
+.faq-section .custom-faq .accordion-button:not(.collapsed) {
+  color: #012754;
+  background: #FFFFFF;
+}
+.faq-section .custom-faq .accordion-button::after {
+  display: none;
+}
+.faq-section .custom-faq .accordion-button::before {
+  content: "+";
+  position: absolute;
+  right: 25px;
+  font-size: 32px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  color: #91A2B6;
+}
+.faq-section .custom-faq .accordion-button:not(.collapsed)::before {
+  content: "−";
+  color: #012754;
+}
+.faq-section .custom-faq .accordion-body {
+  font-size: 16px;
+  color: rgba(1, 39, 84, 0.8980392157);
+  padding: 0 25px 25px;
+}
+
 .footer-section {
   background: url("../images/bg/footer-bg.png");
   background-size: cover;
@@ -2137,7 +2216,7 @@ h3.title {
 
 .footer-top-left h3 {
   font-family: "Quanta Grotesk Pro";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 40px;
   line-height: 50px;
   letter-spacing: 0;
@@ -2161,10 +2240,6 @@ h3.title {
   row-gap: 10px;
 }
 .footer-top-right ul li a {
-  font-family: "Funnel Display";
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 16px;
   line-height: 150%;
   letter-spacing: 0;
   text-align: right;
@@ -2183,7 +2258,6 @@ h3.title {
 }
 .footer-bottom p {
   font-weight: 500;
-  font-size: 16px;
   line-height: 30px;
   letter-spacing: 0%;
   margin-bottom: 0;
@@ -2204,10 +2278,6 @@ h3.title {
   gap: 30px;
 }
 .footer-bottom ul li a {
-  font-family: "Funnel Display";
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 16px;
   line-height: 150%;
   letter-spacing: 0;
   text-align: right;
@@ -2225,15 +2295,11 @@ h3.title {
   }
 }
 @media only screen and (max-width: 991px) {
-  .footer-section {
-    text-align: center;
-  }
   .footer-section .overlay {
     padding-top: 70px;
     padding-bottom: 30px;
   }
   .footer-logo {
-    margin: auto;
     margin-bottom: 20px;
   }
   .footer-bottom {
@@ -2245,7 +2311,6 @@ h3.title {
   .footer-top-left h3 {
     font-size: 32px;
     max-width: 400px;
-    margin: auto;
     margin-bottom: 15px;
   }
   .footer-logo-shape {
@@ -2256,7 +2321,7 @@ h3.title {
     margin: auto;
   }
   .footer-top-right ul {
-    justify-content: center;
+    justify-content: flex-start;
     gap: 19px;
   }
   .footer-bottom {
@@ -2265,11 +2330,9 @@ h3.title {
   }
   .footer-bottom p {
     max-width: 100%;
-    margin: auto;
   }
   .footer-bottom ul {
-    justify-content: center;
-    margin: auto;
+    justify-content: flex-start;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -2281,7 +2344,7 @@ h3.title {
     font-size: 30px;
   }
   .footer-bottom {
-    padding-top: 20px;
+    padding-top: 0px;
   }
   .footer-logo-shape {
     display: none;

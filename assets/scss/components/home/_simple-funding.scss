@@ -7,6 +7,7 @@
     .submit-btn{
         margin: auto;
         margin-top: 25px;
+        max-width: 230px;
     }
 }
 
@@ -113,5 +114,12 @@
         .step{
             min-width: 75px;
         }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .funding-step{
+        flex-direction: row !important;
+        margin-bottom: 20px  !important;
     }
 }

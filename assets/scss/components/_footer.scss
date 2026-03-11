@@ -46,7 +46,7 @@
 .footer-top-left {
   h3 {
     font-family: "Quanta Grotesk Pro";
-    font-weight: 500;
+    font-weight: 600;
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 0;
@@ -71,10 +71,6 @@
 
     li {
       a {
-        font-family: "Funnel Display";
-        font-weight: 500;
-        font-style: Medium;
-        font-size: 16px;
         line-height: 150%;
         letter-spacing: 0;
         text-align: right;
@@ -95,7 +91,6 @@
     z-index: 1;
     p{
         font-weight: 500;
-        font-size: 16px;
         line-height: 30px;
         letter-spacing: 0%;
         margin-bottom: 0;
@@ -117,10 +112,6 @@
 
     li {
       a {
-        font-family: "Funnel Display";
-        font-weight: 500;
-        font-style: Medium;
-        font-size: 16px;
         line-height: 150%;
         letter-spacing: 0;
         text-align: right;
@@ -145,14 +136,13 @@
 }
 @media only screen and (max-width: 991px) {
     .footer-section {
-        text-align: center;
+        // text-align: center;
         .overlay{
             padding-top: 70px;
             padding-bottom: 30px;
         }
     }
     .footer-logo{
-        margin: auto;
         margin-bottom: 20px;
     }
     .footer-bottom{
@@ -165,7 +155,6 @@
         h3{
             font-size: 32px;
             max-width: 400px;
-            margin: auto;
             margin-bottom: 15px;
         }
     }
@@ -176,7 +165,7 @@
     .footer-top-right{
         margin: auto;
         ul{
-            justify-content: center;
+            justify-content: flex-start;
             gap: 19px;
         }
     }
@@ -185,11 +174,9 @@
         padding-top: 20px;
         p{
             max-width: 100%;
-            margin: auto;
         }
         ul{
-            justify-content: center;
-            margin: auto;
+            justify-content: flex-start;
         }
     }
 }
@@ -206,7 +193,7 @@
         }
     }
     .footer-bottom{
-        padding-top: 20px;
+        padding-top: 0px;
     }
     .footer-logo-shape{
         display: none;

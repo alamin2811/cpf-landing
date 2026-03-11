@@ -4,7 +4,7 @@
     // Register GSAP Plugin
     gsap.registerPlugin(ScrollTrigger);
 
-
+    // smooth-scroll
     if (document.body.classList.contains("smooth-scroll")) {
 
         gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -17,6 +17,18 @@
         });
 
     }
+    
+    // BannerParallax
+    gsap.to(".banner-section", {
+      backgroundPosition: "center 200px",
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".banner-section",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
 
     // projectParallax
     var projectParallax = $(".project-section");
