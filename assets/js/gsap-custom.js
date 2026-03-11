@@ -17,17 +17,17 @@
         });
 
     }
-    
+
     // BannerParallax
     gsap.to(".banner-section", {
-      backgroundPosition: "center 200px",
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".banner-section",
-        start: "top top",
-        end: "bottom top",
-        scrub: true
-      }
+        backgroundPosition: "center 200px",
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".banner-section",
+            start: "top top",
+            end: "bottom top",
+            scrub: true
+        }
     });
 
     // projectParallax
@@ -59,46 +59,40 @@
             }
         });
     }
-    
-    gsap.registerPlugin(ScrollTrigger);
 
-    const section = document.querySelector(".funding-across-section");
+    const section = document.querySelector("#fundingAcross");
+    const mapImg = document.querySelector(".funding-across-map-img img");
     const images = document.querySelector(".funding-across-images");
-    const content = document.querySelector(".funding-across-content");
-    
-    if(section && images && content){
-    
-      ScrollTrigger.create({
-        trigger: section,
-        start: "top top",
-        endTrigger: content,
-        end: "top top",
-        pin: images,
-        pinSpacing: false
-      });
-    
+
+    if (section && mapImg && images) {
+
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: section,
+                start: "top top",
+                end: "+=700",
+                scrub: true,
+                pin: section,
+                anticipatePin: 1
+            }
+        });
+
+        // Map zoom out
+        tl.fromTo(
+            mapImg,
+            { scale: 1 },
+            { scale: 0.7, ease: "none" },
+            0
+        );
+
+        // Make images sticky at the top of viewport
+        ScrollTrigger.create({
+            trigger: section,        // still use section as trigger
+            start: "top top",
+            end: "top top",       // sticky until the section ends
+            pin: images,             // pin the images container
+            pinSpacing: false        // no extra spacing added
+        });
     }
-
-    // $(document).ready(function () {
-    //     var FundingAcrossParallax = $(".funding-across-images");
-    //     if (FundingAcrossParallax.length) {
-    //         // Make sure GSAP and ScrollTrigger are loaded
-    //         gsap.registerPlugin(ScrollTrigger);
-
-    //         // select the parent divs, not the img directly
-    //         gsap.utils.toArray(".funding-across-images img").forEach((div, i) => {
-    //             gsap.to(div, {
-    //                 y: -(i + 1) * 50, // different speed per layer
-    //                 ease: "none",
-    //                 scrollTrigger: {
-    //                     trigger: ".funding-across-section",
-    //                     start: "top bottom",
-    //                     end: "bottom top",
-    //                     scrub: true
-    //                 }
-    //             });
-    //         });
-    //     }
-    // });
 
 })(jQuery);
